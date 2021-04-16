@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class ColorSetter : MonoBehaviour
 {
-  public GameObject player;
-  private Player playerdata;
-  private Color color;
-  
-  private void Start()
+  public GameObject sphere;
+
+
+  public static void SetColor(GameObject sphere)
   {
-    
-  }
-  
-  public void Update()
-  {
-    
-   
+    Renderer render = sphere.GetComponent<Renderer>();
+    render.material.SetColor("New Color", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
   }
 }

@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b90e1851169e334b978fc26b3de537c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 638060202}
+  sphere: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1784781300}
+  sphere: {fileID: 2100000, guid: e79cbcf28a1c8a34c8756ef38f166ba1, type: 2}
+  sphereRender: {fileID: 638060202}
 --- !u!1 &1784781300
 GameObject:
   m_ObjectHideFlags: 0
