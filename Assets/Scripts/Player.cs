@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     sphereMat.g = data.posistion[1];
     sphereMat.b = data.posistion[2];
     sphereMat.a = data.posistion[3];
+
   }
   
 }

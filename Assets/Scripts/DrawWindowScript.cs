@@ -6,8 +6,9 @@ public class DrawWindowScript : MonoBehaviour
 {
   public GameObject player;
   public Material sphere;
-  public GameObject sphereRender;
+  
   private Player playerdata;
+  
   private void Start()
   {
     playerdata = player.GetComponent<Player>();
@@ -48,22 +49,19 @@ public class DrawWindowScript : MonoBehaviour
     }
     if(GUI.Button(new Rect(300, 260, 120, 20), "Change Color"))
     {
-      //Color color = sphere.GetComponent<Color>();
-      
+     
       playerdata.sphereMat.r = Random.Range(0.1f, 1f);
       playerdata.sphereMat.g = Random.Range(0.1f, 1f);
       playerdata.sphereMat.b = Random.Range(0.1f, 1f);
       playerdata.sphereMat.a = Random.Range(0.1f, 1f);
-     // Color color = new Color(playerdata.sphereMat.r, playerdata.sphereMat.g, playerdata.sphereMat.b, playerdata.sphereMat.a);
-      
-      //var sphereRenderer = sphereRender.GetComponent<Renderer>();
-      //sphereRenderer.material.SetColor("RandoColor", color);
+      Color color = new Color(playerdata.sphereMat.r, playerdata.sphereMat.g, playerdata.sphereMat.b, playerdata.sphereMat.a);
+      ColorSetter.SetObjectColor(sphere, color);
 
     }
-    if (GUI.Button(new Rect(300, 280, 120, 20), "Change Sphere Color"))
-    {
-
-      ColorSetter.SetColor(sphereRender);
-    }
+    //if (GUI.Button(new Rect(300, 280, 120, 20), "Change Sphere Color"))
+    //{
+    //  Color color = new Color(playerdata.sphereMat.r, playerdata.sphereMat.g, playerdata.sphereMat.b, playerdata.sphereMat.a);
+    //  ColorSetter.SetObjectColor(sphere, color);
+    //}
   }
 }
