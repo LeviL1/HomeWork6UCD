@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-  public int health = 50;
-  public int level = 0;
-  public Color sphereMat = new Color(0.25f, 0.25f, 0.1f);
+  public int health = 50; 
+  public int level = 0; 
+  public Color sphereMat = new Color(0.25f, 0.25f, 0.1f); 
   
 
   public void SavePlayer()
   {
-    Saving.SavePlayer(this);
+    Saving.SavePlayer(this);// saves data in current object
   }
   public void LoadPlayer()
   {
-    PlayerData1 data = Saving.LoadPlayer();
+    PlayerData1 data = Saving.LoadPlayer(); //set the player data to the saved value
     level = data.level;
     health = data.health;
 

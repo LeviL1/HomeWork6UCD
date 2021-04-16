@@ -5,11 +5,9 @@ using UnityEngine;
 public class ColorSetter : MonoBehaviour
 {
   
-  private void Start()
-  {
-    
-  }
-  public static void SetObjectColor(Material sphere, Color color)
+  
+  public static void SetObjectColor(Material sphere, Color color) // takes in 
+  //a sphere material and color for its args and sets the materials color to the sphere's color
   {
     
     sphere.color = color;
