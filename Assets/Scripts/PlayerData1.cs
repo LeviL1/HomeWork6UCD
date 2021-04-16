@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData1 : MonoBehaviour
+public class PlayerData1
 {
   public int level;
   public int health;
